@@ -1,6 +1,6 @@
 @import "partials/base";
 body {
-  background-color: $background;
+  background-color: $body-background;
 }
 
 // div {
@@ -9,6 +9,24 @@ body {
 
 #wrapper {
   @include outer-container();
+  background: $wrapper-background;
+  padding: $margin / 2;
+
+  .article-box {
+    background: $article-box-background;
+    @include span-columns(12);
+    height: $box-height;
+    padding: 0 $margin 0;
+  }
+
+  .article-box2 {
+    background: $article-box-background-2;
+    @include span-columns(12);
+    height: $box-height;
+    padding: $margin $margin 0;
+  }
+
+
 
 }
 
@@ -17,23 +35,26 @@ body {
   background: #4C668A;
 }
 
-.article-grouping {
-  background: lightgrey;
-  @include span-columns(12);
-  height: $box-height;
-}
+
 
 .large-article {
-  background: #ECF8F8;
+  background: $large-background;
   @include span-columns(12);
-  height: $box-height * .6;
-
-
-
+  height: $box-height * .55;
+  margin-bottom: $margin;
 }
 
 .small-article {
   @include span-columns(3);
   background: #EEE4E1;
   height: $box-height * .4;
+  margin-bottom: $margin;
+}
+
+.medium-article {
+  @include span-columns(9);
+  background: $medium-article-background;
+  height: $box-height * .4;
+  margin-bottom: $margin;
+  padding-bottom: 0;
 }

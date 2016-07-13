@@ -8,5 +8,13 @@
 
 //Variables
 
-$background: desaturate(slateblue, 30%);
+$body-background: desaturate(slateblue, 30%);
+$wrapper-background: black;
+$large-background: aliceblue;
+$article-box-background: lightgrey;
+$article-box-background-2: lighten(#E6BEAE, 30%);
+$medium-article-background: lighten(#817AAD, 30%);
 $box-height: 750px;
+$margin: 21.734px;
+
+//Mixins
