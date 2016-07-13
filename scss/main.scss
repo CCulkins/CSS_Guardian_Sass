@@ -1,1 +1,39 @@
 @import "partials/base";
+body {
+  background-color: $background;
+}
+
+// div {
+//   border: 1px solid black;
+// }
+
+#wrapper {
+  @include outer-container();
+
+}
+
+.navbar {
+  @include span-columns(12);
+  background: #4C668A;
+}
+
+.article-grouping {
+  background: lightgrey;
+  @include span-columns(12);
+  height: $box-height;
+}
+
+.large-article {
+  background: #ECF8F8;
+  @include span-columns(12);
+  height: $box-height * .6;
+
+
+
+}
+
+.small-article {
+  @include span-columns(3);
+  background: #EEE4E1;
+  height: $box-height * .4;
+}

@@ -1,5 +1,12 @@
 @import "partials/reset";
+@import "../scss/libraries/bourbon/bourbon.scss";
+@import "../scss/libraries/neat/neat.scss";
 @import "partials/typography";
 @import "partials/buttons";
 @import "partials/figures";
 @import "partials/grids";
+
+//Variables
+
+$background: desaturate(slateblue, 30%);
+$box-height: 750px;
