@@ -69,6 +69,15 @@ body {
   .small-article:last-child {
     margin-right: 0; }
 
+.article-tile {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  height: 300px; }
+  .article-tile:last-child {
+    margin-right: 0; }
+
 .medium-article {
   float: left;
   display: block;
@@ -79,6 +88,26 @@ body {
   margin-bottom: 21.734px;
   padding-bottom: 0; }
   .medium-article:last-child {
+    margin-right: 0; }
+
+.tiny-article {
+  background: #EEE4E1;
+  height: 85.5px;
+  margin-bottom: 21.734px;
+  margin-top: none;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .tiny-article:last-child {
+    margin-right: 0; }
+
+.top-row, .second-row {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .top-row:last-child, .second-row:last-child {
     margin-right: 0; }
 
 /*# sourceMappingURL=main.css.map */

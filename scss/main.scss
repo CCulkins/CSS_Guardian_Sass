@@ -26,16 +26,11 @@ body {
     padding: $margin $margin 0;
   }
 
-
-
 }
-
 .navbar {
   @include span-columns(12);
   background: #4C668A;
 }
-
-
 
 .large-article {
   background: $large-background;
@@ -51,10 +46,34 @@ body {
   margin-bottom: $margin;
 }
 
+.article-tile {
+  @include span-columns(3);
+  height: $box-height * .4;
+}
+
 .medium-article {
   @include span-columns(9);
   background: $medium-article-background;
   height: $box-height * .4;
   margin-bottom: $margin;
   padding-bottom: 0;
+}
+
+.tiny-article {
+  background: #EEE4E1;
+  height: $box-height * .114;
+  margin-bottom: $margin;
+  margin-top: none;
+  @include span-columns(12);
+
+}
+
+
+// should be placed somewhere appropriate later //
+
+
+
+.top-row, .second-row {
+  @include span-columns(12);
+
 }
